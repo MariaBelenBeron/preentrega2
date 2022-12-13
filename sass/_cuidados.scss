@@ -1,0 +1,37 @@
+.cuidados {
+    @extend .texto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: x-large;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1,5fr .5fr 1fr ;
+    grid-template-areas: 
+    "cuidados2 cuidados3"
+    "cuidados4 cuidados5"
+    "cuidados6 cuidados7";
+}
+.cuidados2{
+    grid-area: cuidados2;
+}
+.cuidados3{
+    grid-area: cuidados3;
+    margin-right: 20%;
+}
+.cuidados4{
+    grid-area: cuidados4;
+    margin-left: 20%;
+}
+.cuidados5{
+    grid-area: cuidados5;
+    width: 100%;
+}
+.cuidados6{
+    grid-area: cuidados6;
+}
+.cuidados7{
+    grid-area: cuidados7;
+    margin-right: 20%;
+}

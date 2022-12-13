@@ -1,0 +1,128 @@
+@media screen and (max-width: 768px) {
+
+.card {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.carrito {
+    gap: 40px;
+    margin-top: 60px;
+    margin-left: 0px;
+    margin-bottom: 60px;
+    margin-right: 0px;
+}
+
+.mosaico {
+    width: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.espaciosverdes {
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    }
+
+
+.contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas:
+        "cuidados2"
+        "cuidados3"
+        "cuidados5"
+        "cuidados4"
+        "cuidados6"
+        "cuidados7";
+    justify-items: center;
+    align-items: center;
+}
+
+.cuidados{
+    margin: 0%;
+}
+
+p {
+    display: flex;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+}
+
+}
+
+@media screen and (max-width: 620px) {
+
+.carousel {
+    width: 90%;
+}
+
+.card {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas:
+        "cuidados2"
+        "cuidados3"
+        "cuidados5"
+        "cuidados4"
+        "cuidados6"
+        "cuidados7";
+    justify-items: center;
+    align-items: center;
+}
+
+.cuidados{
+    margin: 0%;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.cuidados img {
+    width: 90%;
+}
+
+.carrito {
+    gap: 20px;
+    margin-top: 60px;
+    margin-left: 0px;
+    margin-bottom: 60px;
+    margin-right: 0px;
+}
+
+.mosaico {
+    width: auto;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.espaciosverdes {
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+}

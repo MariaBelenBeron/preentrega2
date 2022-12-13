@@ -4,14 +4,6 @@
   padding: 0%;
   box-sizing: border-box;
 }
-*::-moz-selection {
-  background-color: rgb(165, 203, 185);
-  color: black;
-}
-*::selection {
-  background-color: rgb(165, 203, 185);
-  color: black;
-}
 
 img {
   max-width: 100vh;
@@ -21,6 +13,25 @@ body {
   background-color: whitesmoke;
 }
 
+.logo {
+  display: flex;
+  background-color: rgba(57, 96, 82, 0.598);
+  font-size: x-large;
+  padding-left: 4%;
+  margin: 0%;
+}
+
+.logo img {
+  padding-bottom: 15px;
+}
+
+nav ul {
+  font-size: large;
+  font-weight: 200;
+  margin-left: 35%;
+  gap: 10%;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -28,11 +39,15 @@ header {
   z-index: 1;
 }
 
+.bkc {
+  background-color: rgb(57, 96, 82);
+}
+
 a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
-  color: whitesmoke;
+  color: white;
 }
 
 p {
@@ -43,144 +58,28 @@ p {
   font-weight: bold;
 }
 
-h1 {
-  font-size: x-large;
-  text-align: center;
-}
-
-h2 {
-  font-size: medium;
-}
-
-footer {
-  background-color: rgba(57, 96, 82, 0.598);
-  text-align: center;
-  font-weight: lighter;
-  font-size: medium;
-  color: white;
-  padding: 2%;
-}
-
-/* extend */
-.texto, .cuidados, h1, h2 {
-  color: black;
-  font-family: "Poppins", sans-serif;
-}
-
-/*mixin*/
-.mosaico {
-  width: 100%;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.mosaico div {
-  padding: 30px;
-}
-.mosaico h1 {
-  font-weight: lighter;
-}
-
-.carrito {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 110px;
-  flex-wrap: wrap;
-  margin-top: 60px;
-  margin-left: 130px;
-  margin-bottom: 130px;
-  margin-right: 130px;
-  line-height: 15px;
-}
-.carrito img {
-  width: 200px;
-  height: 240px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px 10px 0px 0px;
-  box-shadow: 0px 0px 1px 0px;
-}
-.carrito .informacion {
-  font-size: medium;
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0px 0px 1px 0px;
-  background-color: whitesmoke;
-  border-radius: 0px 0px 10px 10px;
-}
-
-header .logo {
-  display: flex;
-  background-color: rgba(57, 96, 82, 0.598);
-  font-size: x-large;
-  padding-left: 4%;
-  margin: 0%;
-}
-header .logo img {
-  padding-bottom: 15px;
-}
-
-.cuidados {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-size: x-large;
-}
-
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1, 5fr 0.5fr 1fr;
-  grid-template-areas: "cuidados2 cuidados3" "cuidados4 cuidados5" "cuidados6 cuidados7";
-}
-
-.cuidados2 {
-  grid-area: cuidados2;
-}
-
-.cuidados3 {
-  grid-area: cuidados3;
-  margin-right: 20%;
-}
-
-.cuidados4 {
-  grid-area: cuidados4;
+.titulo {
   margin-left: 20%;
-}
-
-.cuidados5 {
-  grid-area: cuidados5;
-  width: 100%;
-}
-
-.cuidados6 {
-  grid-area: cuidados6;
-}
-
-.cuidados7 {
-  grid-area: cuidados7;
-  margin-right: 20%;
-}
-
-nav ul {
-  font-size: large;
-  font-weight: 200;
-  margin-left: 35%;
-  gap: 10%;
-}
-
-.bkc {
-  background-color: rgb(57, 96, 82);
+  margin-top: 5%;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   color: rgb(152, 146, 146);
   font-size: larger;
   background-color: whitesmoke;
+}
+
+h1 {
+  font-size: x-large;
+  color: black;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: black;
 }
 
 .carousel {
@@ -195,12 +94,107 @@ nav ul {
   overflow: hidden;
   text-align: center;
 }
+
 .card img {
   transition: all 2s;
 }
 
 .card:hover img {
   transform: scale(1.5);
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1, 5fr 0, 5fr 1fr;
+  grid-template-areas: "cuidados2 cuidados3" "cuidados4 cuidados5" "cuidados6 cuidados7";
+}
+
+.cuidados2 {
+  grid-area: cuidados2;
+}
+
+.cuidados3 {
+  grid-area: cuidados3;
+}
+
+.cuidados4 {
+  grid-area: cuidados4;
+}
+
+.cuidados5 {
+  grid-area: cuidados5;
+}
+
+.cuidados6 {
+  grid-area: cuidados6;
+}
+
+.cuidados7 {
+  grid-area: cuidados7;
+}
+
+.cuidados {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: x-large;
+}
+
+.carrito img {
+  width: 200px;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 110px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-left: 130px;
+  margin-bottom: 130px;
+  margin-right: 130px;
+  line-height: 15px;
+}
+
+.carrito > div {
+  box-shadow: 0px 0px 2px 0px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.informacion {
+  font-size: medium;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mosaico {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.espaciosverdes {
+  padding: 30px;
+}
+
+footer {
+  background-color: rgba(57, 96, 82, 0.598);
+  text-align: center;
+  font-weight: lighter;
+  font-size: medium;
+  color: white;
+  padding: 2%;
 }
 
 @media screen and (max-width: 768px) {
@@ -222,7 +216,6 @@ nav ul {
     margin-top: 10px;
     display: flex;
     align-items: center;
-    text-align: center;
   }
   .espaciosverdes {
     padding: 30px;
@@ -236,9 +229,6 @@ nav ul {
     justify-items: center;
     align-items: center;
   }
-  .cuidados {
-    margin: 0%;
-  }
   p {
     display: flex;
     text-align: center;
@@ -249,7 +239,7 @@ nav ul {
 }
 @media screen and (max-width: 620px) {
   .carousel {
-    width: 90%;
+    width: auto;
   }
   .card {
     text-align: center;
@@ -264,9 +254,6 @@ nav ul {
     justify-items: center;
     align-items: center;
   }
-  .cuidados {
-    margin: 0%;
-  }
   p {
     display: flex;
     justify-content: center;
@@ -275,7 +262,7 @@ nav ul {
     font-weight: bold;
     padding: 5px;
   }
-  .cuidados img {
+  .cuidados5 img {
     width: 90%;
   }
   .carrito {
@@ -290,7 +277,6 @@ nav ul {
     margin-top: 0px;
     display: flex;
     align-items: center;
-    text-align: center;
   }
   .espaciosverdes {
     padding: 30px;

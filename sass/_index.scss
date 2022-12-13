@@ -1,0 +1,36 @@
+nav ul{
+    font-size:large;
+    font-weight: 200;
+    margin-left: 35%;
+    gap: 10%;
+}
+
+.bkc{
+    background-color: $colorPrincipal;
+}
+
+.container{
+    color: rgb(152, 146, 146);
+    font-size: larger;
+    background-color: whitesmoke;
+}
+
+.carousel{
+    z-index: -1;
+}
+
+.btn-primary{
+    background-color:$colorPrincipal;
+}
+
+.card{
+    overflow: hidden;
+    text-align: center;
+    img{
+        transition: all 2s;
+    }
+}
+
+.card:hover img{
+    transform: scale(1.5);
+}
