@@ -69,14 +69,10 @@ footer {
 
 /*mixin*/
 .mosaico {
-  width: 100%;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.mosaico div {
-  padding: 30px;
 }
 .mosaico h1 {
   font-weight: lighter;
@@ -286,15 +282,14 @@ nav ul {
     margin-right: 0px;
   }
   .mosaico {
-    width: auto;
-    margin-top: 0px;
+    margin: 0px;
     display: flex;
     align-items: center;
     text-align: center;
+    font-size: small;
+    padding: 0%;
   }
-  .espaciosverdes {
-    padding: 30px;
-    align-items: center;
-    text-align: center;
+  .mosaico img {
+    width: 80%;
   }
 }/*# sourceMappingURL=estilos.css.map */

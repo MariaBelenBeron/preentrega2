@@ -112,17 +112,16 @@ p {
 }
 
 .mosaico {
-    width: auto;
-    margin-top: 0px;
+    margin: 0px;
     display: flex;
     align-items: center;
     text-align: center;
+    font-size: small;
+    padding: 0%;
 }
 
-.espaciosverdes {
-    padding: 30px;
-    align-items: center;
-    text-align: center;
+.mosaico img{
+    width:80%;
 }
 
 }
