@@ -68,14 +68,86 @@ footer {
 }
 
 /*mixin*/
-.mosaico {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.mosaico h1 {
+main {
   font-weight: lighter;
+  margin-left: 6%;
+  padding-top: 60px;
+}
+
+.box {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 9fr 1fr 1fr;
+  grid-template-areas: "box1 box2 box3";
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box1:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+.box2:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+.box3:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+.box4 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 6fr 1fr 1fr;
+  grid-template-areas: "box5 box6 box7";
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.box7 {
+  grid-area: box7;
+}
+
+.box5:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+.box6:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 5s;
+}
+
+.box7:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 5s;
 }
 
 .carrito {
@@ -233,6 +305,21 @@ nav ul {
     justify-items: center;
     align-items: center;
   }
+  .box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas: "box1" "box2" "box3";
+    justify-items: center;
+    align-items: center;
+  }
+  .box4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas: "box5" "box6" "box7";
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
   .cuidados {
     margin: 0%;
   }
@@ -260,6 +347,21 @@ nav ul {
     grid-template-areas: "cuidados2" "cuidados3" "cuidados5" "cuidados4" "cuidados6" "cuidados7";
     justify-items: center;
     align-items: center;
+  }
+  .box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas: "box1" "box2" "box3";
+    justify-items: center;
+    align-items: center;
+  }
+  .box4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas: "box5" "box6" "box7";
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 10px;
   }
   .cuidados {
     margin: 0%;

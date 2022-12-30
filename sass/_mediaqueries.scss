@@ -45,6 +45,29 @@
     align-items: center;
 }
 
+.box{
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas:
+        "box1"
+        "box2"
+        "box3";
+    justify-items: center;
+    align-items: center;
+}
+
+.box4{
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas:
+        "box5"
+        "box6"
+        "box7";
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
 .cuidados{
     margin: 0%;
 }
@@ -84,6 +107,29 @@ p {
         "cuidados7";
     justify-items: center;
     align-items: center;
+}
+
+.box{
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas:
+        "box1"
+        "box2"
+        "box3";
+    justify-items: center;
+    align-items: center;
+}
+
+.box4{
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-areas:
+        "box5"
+        "box6"
+        "box7";
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
 .cuidados{
