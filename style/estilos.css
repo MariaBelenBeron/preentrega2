@@ -272,6 +272,11 @@ nav ul {
   transform: scale(1.5);
 }
 
+.boton {
+  margin-top: 20px;
+  margin-left: 40%;
+}
+
 @media screen and (max-width: 990px) {
   .card {
     text-align: center;
